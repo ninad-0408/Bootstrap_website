@@ -30,7 +30,7 @@
 }
 
 body{
-    padding-top: 50px;
+    padding-top: 60px;
     z-index: 0;
 }
 
@@ -39,8 +39,13 @@ body{
     background-color: #512DA8;
 }
 
-.navbar, navbar-brand{
+.navbar{
     font-size: 120%;
     font-weight: 400;
 
+}
+
+.navbar-brand{
+    font-size: 120%;
+    font-weight: 600;
 }
