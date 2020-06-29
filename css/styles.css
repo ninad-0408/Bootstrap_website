@@ -46,11 +46,14 @@ body {
     font-weight: 600;
 }
 
-.tab-content
-{
+.tab-content {
     border-bottom: 1px solid #ddd;
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
     padding: 20px;
     min-height: 200px;
+}
+
+.card-header>a {
+    cursor: pointer;
 }
