@@ -54,6 +54,6 @@ body {
     min-height: 200px;
 }
 
-.card-header>a {
+.card-header>a, .navbar-text {
     cursor: pointer;
 }
