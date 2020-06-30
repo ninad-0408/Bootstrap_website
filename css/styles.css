@@ -57,3 +57,17 @@ body {
 .card-header>a, .navbar-text {
     cursor: pointer;
 }
+
+.carousel{
+    background-color: #512DA8;
+}
+
+.carousel-item{
+    height: 200px;
+}
+.carousel-item>img{
+    min-height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
