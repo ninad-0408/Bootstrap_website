@@ -4,7 +4,7 @@
   "description": "This is a website for Ristorante Con Fusion restorent",
   "main": "index.html",
   "scripts": {
-    "scss": "node-sass -0 css/ css/",
+    "scss": "node-sass -o css/ css/",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
@@ -20,6 +20,7 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "less": "^3.11.3",
+    "node-sass": "^4.14.1",
     "popper.js": "^1.16.1"
   }
 }
