@@ -4,6 +4,7 @@
   "description": "This is a website for Ristorante Con Fusion restorent",
   "main": "index.html",
   "scripts": {
+    "scss": "node-sass -0 css/ css/",
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
