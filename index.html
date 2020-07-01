@@ -131,7 +131,7 @@
                             </div>
                             <div class="row form-row">
                                 <label for="issmoke" class="col-form-label col-sm-4">Section</label>
-                                <div>
+                                <div id="issmoke">
                                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
                                         <label class="btn btn-success active">
                                             <input type="radio" name="smoking" checked>Non-Smoking
@@ -182,7 +182,7 @@
 
         <div class="row row-content">
             <div class="col">
-                <div class="carousel slide" id="mycarousel" data-ride="carousel">
+                <div class="carousel slide" id="mycarousel" data-ride="carousel" data-interval="4500">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
                             <img src="img/uthappizza.png" alt="uthappizza" class="d-block img-fluid">
@@ -232,6 +232,11 @@
                         <a href="#mycarousel" data-slide="next" role="button" class="carousel-control-next">
                             <span class="carousel-control-next-icon"></span>
                         </a>
+                        <div class="btn-group" id="mixcarousel">
+                            <button class="btn btn-danger btn-sm" id="mycarousel-pause">
+                                <span class="fa fa-pause"></span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -356,7 +361,25 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    
+    <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel({interval: 2000});
+            $("#mycarousel-pause").click(function(){
+                if($("#mycarousel-pause").children('span').hasClass('fa-pause'))
+                {
+                $("#mycarousel").carousel('pause');
+                $("#mycarousel-pause").children('span').removeClass('fa-pause');
+                $("#mycarousel-pause").children('span').addClass('fa-play');
+                }
+                else
+                {
+                $("#mycarousel").carousel('cycle');
+                $("#mycarousel-pause").children('span').removeClass('fa-play');
+                $("#mycarousel-pause").children('span').addClass('fa-pause');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -71,3 +71,10 @@ body {
     top: 0;
     left: 0;
 }
+
+#mycarousel .btn-group{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
