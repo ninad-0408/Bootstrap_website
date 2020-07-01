@@ -1,0 +1,80 @@
+.row-content {
+    margin: 0 auto;
+    padding: 50px 0 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 4rem;
+}
+
+.row-header {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.footer {
+    background-color: #D1C4E9;
+    margin: 0 auto;
+    padding: 20px 0 20px 0;
+}
+
+.jumbotron {
+    background-color: blueviolet;
+    color: floralwhite;
+}
+
+.address {
+    font-size: 80%;
+    margin: 0;
+    color: #0f0f0f;
+}
+
+body {
+    padding-top: 60px;
+    z-index: 0;
+}
+
+.navbar-dark {
+    background-color: #512DA8;
+}
+
+.navbar {
+    font-size: 120%;
+    font-weight: 400;
+}
+
+.navbar-brand {
+    font-size: 120%;
+    font-weight: 600;
+}
+
+.tab-content {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 20px;
+    min-height: 200px;
+}
+
+.card-header>a, .navbar-text {
+    cursor: pointer;
+}
+
+.carousel{
+    background-color: #512DA8;
+}
+
+.carousel-item{
+    height: 200px;
+}
+.carousel-item>img{
+    min-height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#mycarousel .btn-group{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
