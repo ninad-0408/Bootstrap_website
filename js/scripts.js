@@ -1,0 +1,35 @@
+$(document).ready(function(){
+    $("#mycarousel").carousel({interval: 2000});
+    $("#mycarousel-pause").click(function(){
+        if($("#mycarousel-pause").children('span').hasClass('fa-pause'))
+        {
+        $("#mycarousel").carousel('pause');
+        $("#mycarousel-pause").children('span').removeClass('fa-pause');
+        $("#mycarousel-pause").children('span').addClass('fa-play');
+        }
+        else
+        {
+        $("#mycarousel").carousel('cycle');
+        $("#mycarousel-pause").children('span').removeClass('fa-play');
+        $("#mycarousel-pause").children('span').addClass('fa-pause');
+        }
+    });
+    $("#loginmodaltogglenavbar").click(function(){
+        $("#loginModal").modal("toggle");
+    })
+    $("#loginmodaltoggleinner").click(function(){
+        $("#loginModal").modal("toggle");
+    })
+    $("#loginmodaltogglecancel").click(function(){
+        $("#loginModal").modal("toggle");
+    })
+    $("#reservemodaltogglenavbar").click(function(){
+        $("#reserveModal").modal("toggle");
+    })
+    $("#reservemodaltoggleinner").click(function(){
+        $("#reserveModal").modal("toggle");
+    })
+    $("#reservemodaltogglecancel").click(function(){
+        $("#reserveModal").modal("toggle");
+    })
+});

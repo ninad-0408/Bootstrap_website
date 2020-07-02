@@ -4,7 +4,7 @@ $background-light: #9575CD;
 $background-pale: #D1C4E9;
 
 // Height variables
-$carousel-item-height: 300px;
+$carousel-item-height: 200px;
 
 @mixin zero-margin($pad-up-dn, $pad-left-right) {
 	margin:0px auto;
@@ -18,7 +18,7 @@ $carousel-item-height: 300px;
 .row-content {
     @include zero-margin(50px,0px);
     border-bottom: 1px ridge;
-    min-height:400px;
+    min-height:300px;
 }
 
 .footer{
@@ -39,12 +39,14 @@ address{
 }
 
 body{
-    padding:50px 0px 0px 0px;
+    padding:60px 0px 0px 0px;
     z-index:0;
 }
 
 .navbar-dark {
      background-color: $background-dark;
+     font-weight: 400;
+    font-size: 120%;
 }
 
 .tab-content {
@@ -62,12 +64,12 @@ body{
             position: absolute;
             top: 0;
             left: 0;
-            min-height: 300px;
+            min-height: 200px;
         }
     }
 }
 
-#carouselButton {
+#mixcarousel {
     right:0px;
     position: absolute;
     bottom: 0px;
@@ -76,13 +78,13 @@ body{
 
 #reserveModal, #loginModal{
     .modal-header{
-        color: white;
+        color: floralwhite;
         background: $background-dark;
         .close{
-            color: $background-light;
+            color: floralwhite;
         }
     }
-    .modal-body{
+    .modal-content{
         background: $background-light;
     }
 }

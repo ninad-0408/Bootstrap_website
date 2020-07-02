@@ -4,15 +4,20 @@
   "description": "This is a website for Ristorante Con Fusion restorent",
   "main": "index.html",
   "scripts": {
+    "start": "npm run watch:all",
     "scss": "node-sass -o css/ css/",
-    "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lite": "lite-server"
+    "lite": "lite-server",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
   "author": "Ninad Kalanke",
   "license": "ISC",
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.3.0",
+    "node-sass": "^4.14.1",
+    "onchange": "^7.0.2",
+    "parallelshell": "^3.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.5.0",
@@ -20,7 +25,6 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
     "less": "^3.11.3",
-    "node-sass": "^4.14.1",
     "popper.js": "^1.16.1"
   }
 }
